@@ -1,0 +1,436 @@
+/*-------------------------------------------------------------------------------------
+Theme Name: Business web theme
+Theme URI:  
+Version:    1.0
+Author: Zenerom  Creative lab
+-------------------------------------------------------------------------------------*/
+/**
+*****************************************
+@File: Business Theme page Styles
+
+* This file contains the styling for the actual theme, this
+is the file you need to edit to change the look of the
+theme.
+
+content table
+/*
+01.HOME PAGE STYLE
+02.SLIDER
+03.SERVICES
+04.PARALLAX
+05.GALLERY
+06.TWEETS
+07.OUR TEAM
+08.INSTRUCTIONS
+09.CONTACT UD
+10. FONTS
+
+/*==================================
+    01.HOME PAGE STYLE
+====================================*/
+body{
+  background: #fff;
+  font-family: poppinslight;
+}
+p {
+    text-align: justify;
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+.h4, h4 {
+    font-size: 3.5rem;
+    color: #fff;
+}
+h2{
+  font-size: 30px;
+  color: #000;
+}
+.h3, h3 {
+    font-size: 2.75rem;
+}
+/*--------------------------------------
+               02.SLIDER
+----------------------------------------*/
+.carousel-item {
+  height: 100vh;
+  min-height: 300px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.carousel-control-next-icon{
+  display: none;
+}
+.carousel-control-prev-icon{
+  display: none;
+}
+.slide1{
+  background: url('../images/1.jpg')  no-repeat;
+  background-size: cover; 
+  
+}
+.slide2{
+  background: url('../images/2.jpg')  no-repeat;
+  background-size: cover; 
+}
+.slide3{
+  background: url('../images/3.jpg')  no-repeat;
+  background-size: cover; 
+}
+
+.carousel-caption {
+    position: absolute;
+    left: 10%;
+    z-index: 10;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: #fff;
+    text-align: justify;
+    top: 50%;
+    right: 40%;
+}
+.btn-find-more {
+    background: #fff;
+    padding: 10px 30px 10px 30px;
+    border: 1px solid #fff;
+    border-radius: 30px;
+    color: #000;
+    text-decoration: none;
+}
+.btn-find-more {
+    color: #7c5555;
+    text-decoration: none;
+    position: relative;
+    top: 30px;
+}
+.bg-dark {
+        background-color:rgba(81, 88, 70, 0.48)!important;
+}
+.nav-item:hover>.dropdown-menu{
+    display: block;
+    transition: .5s linear;
+    min-height: 130px;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 10rem;
+    padding: .5rem 0;
+    margin: .125rem 0 0;
+    font-size: 1rem;
+    color: #212529;
+    text-align: left;
+    list-style: none;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid white;
+    border-radius: 0px;
+}
+.carousel-indicators li {
+    position: relative;
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 auto;
+    flex: 0 1 auto;
+    width: 10px;
+    height: 10px;
+    margin-right: 3px;
+    margin-left: 3px;
+    text-indent: -999px;
+    background-color: rgba(93, 82, 82, 0.5);
+    border-radius: 10px;
+}
+.center {
+    text-align: center;
+}
+/*--------------------------------------
+               03.SERVICES
+----------------------------------------*/
+.services {
+    padding-top: 150px;
+    padding-bottom: 200px;
+}
+.service-size{
+    text-align: center;
+    padding: 0% 4%;
+    margin-top: 30px;
+}
+.heading {
+    padding-bottom: 100px;
+    padding-top: 0px;
+}
+.heading::after {
+    position: absolute;
+    border-bottom: 1px solid #ddd;
+    content: "";
+    width: 15%;
+    height: 1px;
+    bottom: 75px;
+    left: 43%;
+    right: 0;
+}
+.wrap-text {
+    width: 60%;
+    position: relative;
+    left: 19%;
+}
+.service-icon {
+    height: auto;
+    width: 25%;
+    margin-bottom: 25px;
+}
+.concept{
+  padding-bottom: 4px;
+}
+/*--------------------------------------
+               04.PARALLAX
+----------------------------------------*/
+
+.parellax {
+    background: url('../images/parallx-bg.jpg');
+    background-attachment: fixed;
+    padding: 100px;
+}
+
+.counter {
+    font-size: 45px;
+    color: #ffffff;
+    vertical-align: middle;
+}
+.count-text {
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    font-family: poppinssemibold;
+}
+/*--------------------------------------
+               05.GALLERY
+----------------------------------------*/
+.gallery{
+    padding-top: 150px;
+    padding-bottom: 150px;
+}
+.gallery-size{
+    padding: 0px 0px;
+}
+.g-img{
+  width: 100%;
+  height: 250px;
+}
+figure{
+    width: 100%;
+    height: 250px;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
+    border: 0px solid #ddd;
+}
+.hover06 figure img {
+  -webkit-transform: rotate(0) scale(1);
+	transform: rotate(0) scale(1);
+	-webkit-transition: .7s ease-in ;
+	transition: .7s ease-in;
+}
+.hover06 figure:hover img {
+	-webkit-transform: rotate(15deg) scale(1.4);
+	transform: rotate(15deg) scale(1.4);
+	-webkit-transition: .7s ease-in ;
+	transition: .7s ease-in;
+}
+/*pop up*/
+.close:not(:disabled):not(.disabled) {
+    text-align: right;
+    cursor: pointer;
+    outline: none;
+}
+.modal-dialog {
+    max-width: 770px;
+    margin: 1.75rem auto;
+}
+/*--------------------------------------
+               06.TWEETS
+----------------------------------------*/
+.tweets{
+      padding-bottom: 150px;
+}
+.tweet-icon {
+    width: 100px;
+    height: 100px;
+    border-radius: 65px;
+    margin-bottom: 20px;
+}
+.tweet-size1 {
+    border-left: 1px solid #ddd;
+}
+.tweet-pic {
+    width: 20%;
+    border-radius: 170px;
+    border: 1px solid #ddd;
+}
+.col-md-6.center.fadeInDown.animated.fix-width {
+    height: 250px;
+}
+/*--------------------------------------
+               07.OUR TEAM
+----------------------------------------*/
+.team-member {
+    width: 75%;
+    height: 250px;
+}
+.content {
+    text-align: center;
+    padding-bottom: 15px;
+    padding-top: 20px;
+    box-shadow: 0px 0px 6px -3px;
+}
+.content:hover{
+    box-shadow: 0px 14px 36px -23px;
+    margin-top: -3px;
+    transition: .3s ease-in-out;
+}
+.d-flex {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+    margin-left: 51px;
+}
+.social-icons {
+    padding: 1.5rem !important;
+    cursor: pointer;
+}
+.member-name {
+    padding-top: 20px;
+}
+.zoom-in .zoom img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+  cursor: zoom-in;
+}
+.zoom-in .zoom:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.zoom {
+    border: none;
+}
+.zoom-in .social-icons i {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.zoom-in .social-icons:hover i {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+.facebook:hover {
+    color: #3a579e;
+}
+.twitter:hover {
+    color: #429cd6;
+}
+.google-plus:hover {
+    color: #df4b37;
+}
+.linked-in:hover {
+    color: #0f76b7;
+}
+
+/*--------------------------------------
+               08.INSTRUCTIONS
+----------------------------------------*/
+.instructions{
+    padding-bottom: 150px;
+    padding-top: 150px;
+}
+
+/*--------------------------------------
+               09.CONTACT US
+----------------------------------------*/
+.contact-bg {
+    background: #fff;
+    padding-left: 10px;
+    padding-right: 25px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+.contact{
+    background: url('../images/parallx-bg.jpg');
+    background-attachment: fixed;
+    padding: 100px;
+}
+.form-control.form-align {
+    margin: 5px;
+    color: #080707;
+}
+.form-size {
+    height: 84px;
+}
+.form-control.form-align {
+    margin: 7px;
+    border: 1px solid #080707;
+    background: transparent;
+    border-radius: 0px;
+    outline: none !important;
+}
+.form-control::placeholder{
+  color: #080707;
+}
+.button{
+    width: 12%;
+    border: 1px solid #080707;
+    background: #fff;
+    padding: 8px;
+    margin-top: 30px;
+    outline: none;
+    cursor: pointer;
+}
+.button:hover{
+  color: #545252;
+}
+.footers {
+    background: #3d3d3d;
+    padding: 10px;
+}
+
+/*--------------------------------------
+               10.FONTS
+----------------------------------------*/
+@font-face {
+    font-family: 'poppinslight';
+    src: url('../fonts/poppins-light-webfont.woff2') format('woff2'),
+         url('../css/fonts/poppins-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinsmedium';
+    src: url('../fonts/poppins-medium-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('../fonts/poppins-bold-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('../fonts/poppins-semibold-webfont.woff2') format('woff2'),
+         url('../fonts/poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
